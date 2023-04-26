@@ -1,5 +1,23 @@
 doctype html
+
 html
-    head
-    body
-        a(href='files/100RICOH/R0010001.JPG') R0010001 
+  head
+  body
+    - var n = 1;
+    - var i = 10
+    ul
+      while n < 10
+        - var filename = "R00100" + n + ".JPG"
+        - var path = "files/100RICOH/" + filename
+        li
+          a(href=path) #{filename}
+        = n++
+      while i < 16
+        - var filename2 = "R0010" + i + ".JPG"
+        - var path2 = "files/100RICOH/" + filename2
+
+        li 
+          a(href=path2) #{filename2}
+        - i++
+//-
+ 
