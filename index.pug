@@ -7,13 +7,13 @@ html
     - var i = 10
     ul
       while n < 10
-        - var filename = "R00100" + n + ".JPG"
+        - var filename = "R001000" + n + ".JPG"
         - var path = "files/100RICOH/" + filename
         li
           a(href=path) #{filename}
-        = n++
+        - n++
       while i < 16
-        - var filename2 = "R0010" + i + ".JPG"
+        - var filename2 = "R00100" + i + ".JPG"
         - var path2 = "files/100RICOH/" + filename2
 
         li 
